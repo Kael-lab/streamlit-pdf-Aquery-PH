@@ -1,8 +1,0 @@
-streamlit
-langchain
-langchain_community
-python-dotenv
-transformers
-sentence-transformers
-faiss-cpu
-cyMuPDF
