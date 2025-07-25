@@ -5,4 +5,4 @@ python-dotenv
 transformers
 sentence-transformers
 faiss-cpu
-pyMuPDF
+cyMuPDF
