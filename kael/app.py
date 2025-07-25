@@ -26,15 +26,10 @@ def load_embeddings():
 llm = load_embeddings()
 
 #DEFINE PROMPT TEMPLATE
-QA_PROMPT = PromptTemplate( 
-
-
-    input_variables = ["context", "question"],
-prompt_template = """You are a helpful assistant. Answer the question based on the provided context."
-   
-     Context: {context}
-    Question: {question}
-    Answer:"""   )  
+QA_PROMPT = PromptTemplate(
+    input_variables=["context", "question"],
+    template="""You are a helpful assistant. Answer the question based on the context. Context: {context} Question {question} Answer:"""
+)
 
 def extract_text_from_pdf(uploaded_file):
     doc = fitz.open(stream=uploaded_file.read(), filetype="pdf")
